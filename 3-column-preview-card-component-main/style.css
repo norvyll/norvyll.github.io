@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --drk-cyan: hsl(184, 100%, 22%);
+  --vdrk-cyan: hsl(179, 100%, 13%);
+  --p-withe: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+  --light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+  --heading-font: "Big Shoulders Display", sans-serif;
+  --main-font: "Lexend Deca", sans-serif;
+  --radius: 0.7rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+h3 {
+  color: var(--light-gray);
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+}
+
+p {
+  color: var(--p-withe);
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  width: 30rem;
+}
+
+.sedan-card {
+  background-color: var(--orange);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+.suvs-card {
+  background-color: var(--drk-cyan);
+}
+
+.luxury-card {
+  background-color: var(--vdrk-cyan);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.car-pic,
+.car-type-title,
+.car-type-description {
+  margin: 5rem;
+}
+
+.car-type-description {
+  margin-top: 3.5rem;
+}
+
+.car-type-title {
+  margin-top: 2.8rem;
+}
+
+button {
+  margin-top: 9rem;
+  margin-bottom: 4.5rem;
+  cursor: pointer;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+.learn-more {
+  margin-left: 5rem;
+}
+
+button span {
+  color: var(--orange);
+  font-family: var(--main-font);
+}
+
+.sedan-card span {
+  color: car(--orange);
+}
+
+.suvs-card span {
+  color: var(--drk-cyan);
+}
+
+.luxury-card span {
+  color: var(--vdrk-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
