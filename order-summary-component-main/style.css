@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --pale-lighter-blue: hsl(225, 100%, 98%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --font: "Red Hat Display", sans-serif;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale-blue);
+}
+
+section {
+  margin-left: 0 auto;
+  margin-top: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.single-card {
+  display: flex;
+  height: 100vh;
+  width: 45rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.order-summary {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 45rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.order-summary .title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 5.5rem;
+}
+
+.order-description {
+  margin: 4rem 8rem 4rem 8rem;
+  font-size: 1.6rem;
+  color: var(--desat-blue);
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.plan-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35rem;
+  height: 10rem;
+  background-color: var(--pale-lighter-blue);
+  border-radius: 1rem;
+}
+
+.plan-title-price h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.plan-title-price p {
+  font-size: 1.6rem;
+  color: var(--desat-blue);
+}
+
+.change a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--bright-blue);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 3.5rem;
+  padding-left: 11.4rem;
+  padding-right: 11.4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  border: 0;
+  background-color: var(--bright-blue);
+  border-radius: 1rem;
+  color: var(--pale-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel {
+  margin: 3.5rem 0 3.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.1rem;
+}
